@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Cloudflare DNS Record ID Display",
+  "version": "1.0.0",
+  "description": "Displays DNS record identifiers in the Cloudflare dashboard DNS records list",
+  "content_scripts": [
+    {
+      "matches": ["https://dash.cloudflare.com/*/dns/records*"],
+      "js": ["dist/content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

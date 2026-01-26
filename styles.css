@@ -1,0 +1,31 @@
+/**
+ * Cloudflare DNS Record ID Display Extension - Styles
+ */
+
+/* The ID cell content */
+.cf-dns-id-cell {
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Hover state */
+.cf-dns-id-cell:hover {
+  text-decoration: underline;
+}
+
+/* Copied feedback state */
+.cf-dns-id-cell--copied {
+  color: #059669 !important;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .cf-dns-id-cell--copied {
+    color: #34d399 !important;
+  }
+}

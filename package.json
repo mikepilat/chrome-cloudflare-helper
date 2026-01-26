@@ -1,0 +1,13 @@
+{
+  "name": "cloudflare-dns-id-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to display DNS record IDs in Cloudflare dashboard",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
