@@ -3,12 +3,17 @@
   "name": "Cloudflare DNS Record ID Display",
   "version": "1.0.0",
   "description": "Displays DNS record identifiers in the Cloudflare dashboard DNS records list",
+  "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["https://dash.cloudflare.com/*/dns/records*"],
+      "matches": ["https://dash.cloudflare.com/*/*/dns/records*"],
       "js": ["dist/content.js"],
       "css": ["styles.css"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
 }
